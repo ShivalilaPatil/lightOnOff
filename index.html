@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .main-head {
+        position: absolute;
+        top: 15%;
+        left: 23%;
+      }
+      #title {
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+      }
+      #myimg {
+        width: 350px;
+      }
+      #btn {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-head">
+      <h2 id="title">Can you turn on/off the light?</h2>
+
+      <button
+        id="btn"
+        onclick="document.getElementById('myimg').src='images/lon.jpg'"
+      >
+        Turn On the Light
+      </button>
+      <img src="images/loff.jpg" alt="lightoff_img" id="myimg" />
+
+      <button
+        id="btn"
+        onclick="document.getElementById('myimg').src='images/loff.jpg'"
+      >
+        Turn Off the Light
+      </button>
+    </div>
+  </body>
+</html>
